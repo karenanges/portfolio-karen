@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio Karen</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="logokaren.png">
+</head>
+
+<body>
+
+<!-- ANCORAS FLUTUANTES -->
+<div class="social-floating">
+  <a href="https://github.com/seuusuario" target="_blank" title="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://linkedin.com/in/seuusuario" target="_blank" title="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://wa.me/55SEUNUMERO" target="_blank" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://instagram.com/seuusuario" target="_blank" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+
+    
+<button id="toggleDarkMode" aria-label="Alternar modo escuro">🌙</button>
+  <div class="container">
+    <div class="photo-container">
+      <div class="circle-glow">
+        <img src="fotokaren2.png" alt="Foto de Karen" />
+      </div>
+    </div>
+    
+    <div class="buttons">
+      <a href="#sobre" class="top">Sobre</a>
+      <div class="middle-buttons">
+        <a href="#contato" class="left">Contato</a>
+        <a href="#projetos" class="right">Projetos</a>
+      </div>
+      <a href="#habilidades" class="bottom">Habilidades</a>
+    </div>
+  </div>
+
+  
+  <section id="sobre">
+    <h2>Sobre mim</h2>
+    <div class="sobre-container">
+      <div class="sobre-texto">
+        Sou Karen, desenvolvedora front-end apaixonada por criar interfaces bonitas, funcionais e responsivas. Domino HTML, CSS e JavaScript, e estou sempre em busca de aprender mais e encarar novos desafios.
+      </div>
+      <div class="sobre-foto">
+        <img src="fotodakaren.jpg" alt="Karen" />
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <h2 class="titulo-habilidades">Minhas habilidades</h2>
+    <div class="habilidades-container"> 
+  <div class="icone-habilidade">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+  </div>
+  <div class="icone-habilidade">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+  </div>
+  <div class="icone-habilidade">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+  </div>
+  <div class="icone-habilidade">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+  </div>
+  <div class="icone-habilidade">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+  </div>
+  <div class="icone-habilidade">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+  </div>
+  <div class="icone-habilidade">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+  </div>
+  <div class="icone-habilidade">
+    <img src="https://img.icons8.com/color/48/000000/canva.png" alt="Canva">
+  </div>
+</div>
+
+  </section>
+
+  <section id="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="grade-projetos">
+
+      <a href="https://karenanges.github.io/meu-blog-fofinho/index.html"
+        target="_blank" class="projeto">
+        <img src="blog.png" alt="blog fofinho">
+        <h3>Meu Blog Fofinho</h3>
+        <p>Blog em tons pastel, feito com HTML-CSS e posts fofinhos. 🩷</p>
+        </a>
+
+        <a href="https://github.com/karenanges/Jogo-do-number-secret"
+        target="_blank" class="projeto">
+        <img src="jogo.png" alt="jogo número secreto">
+        <h3>Jogo do Número Secreto</h3>
+        <p>Adivinhe o número aleatório em JavaScript e receba dicas em tempo real! 🎲</p>
+        </a>
+
+        <a href="https://github.com/karenanges/Gerador-de-senhas-py" target="_blank" class="projeto">
+        <img src="geradordesenha.png" alt="Projeto 3">
+        <h3>Gerador de Senhas</h3>
+        <p>Um gerador de senhas feito com Python, simples e seguro! 🔒</p>
+        </a>
+
+    </div>
+
+    <div class="ver-mais-container">
+      <a href="https://github.com/karenanges" target="_blank" class="btn-ver-mais">Ver mais projetos no GitHub</a>
+    </div>
+  </section>
+
+
+
+  <section id="contato">
+    <h2>Entre em Contato</h2>
+    <form class="form-contato" id="formContato">
+  <label for="nome">Nome</label>
+  <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+  <label for="email">E-mail</label>
+  <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+  <label for="mensagem">Mensagem</label>
+  <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+  <button type="submit">Enviar Mensagem 💌</button>
+</form>
+
+<p id="mensagemSucesso" class="mensagem-sucesso"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+  <script src="script.js"></script>
+  
+</body>
+
+
+</html>
