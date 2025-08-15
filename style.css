@@ -557,6 +557,154 @@ margin-bottom: 50px;
 
 
 
+
+
+
+
+/* Botão modo escuro */
+#toggleDarkMode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #bba8ff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(187, 168, 255, 0.5);
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+#toggleDarkMode:hover {
+  background-color: #a48eff;
+}
+
+
+.dark-mode {
+  background: linear-gradient(135deg, #2b2b33, #3a3448, #2b2b33);
+}
+
+.dark-mode section {
+  background: rgba(255, 255, 255, 0.07) !important;
+  color: #f0eaff;
+}
+
+.dark-mode a {
+  background-color: #9d8cff;
+  color: #fff;
+}
+
+.dark-mode .sobre-texto,
+.dark-mode .icone-habilidade,
+.dark-mode .projeto,
+.dark-mode .btn-ver-mais,
+.dark-mode .form-contato {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: #f0eaff !important;
+}
+
+.dark-mode .projeto h3,
+.dark-mode h2,
+.dark-mode .titulo-habilidades {
+  color: #eae3ff !important;
+}
+
+
+
+
+
+/* Botão modo escuro */
+#toggleDarkMode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #c7b5ff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(199, 181, 255, 0.5);
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+#toggleDarkMode:hover {
+  background-color: #b39afc;
+}
+
+/* Modo escuro roxo suave */
+.dark-mode {
+  background: linear-gradient(135deg, #3a2b5f, #4c3a78, #2e224d);
+}
+
+.dark-mode section {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #f5f0ff;
+}
+
+.dark-mode a {
+  background-color: #a58bff;
+  color: #fff;
+}
+
+.dark-mode .sobre-texto,
+.dark-mode .icone-habilidade,
+.dark-mode .projeto,
+.dark-mode .btn-ver-mais,
+.dark-mode .form-contato {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #2e224d !important;
+
+
+
+  
+}
+
+.dark-mode .projeto h3,
+.dark-mode h2,
+.dark-mode .titulo-habilidades {
+  color: #2e224d !important;
+}
+
+.dark-mode .form-contato button {
+  background-color: #a58bff;
+  color: #2e224d;
+
+
+
+
+  
+}
+
+.dark-mode .form-contato button:hover {
+  background-color: #8f74e6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*fundo brilhante dark mode*/
 
 .dark-mode #sobre::before {
