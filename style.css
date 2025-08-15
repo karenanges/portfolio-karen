@@ -524,7 +524,7 @@ margin-bottom: 50px;
   background-color: #864ef8;
 }
 
-/* Modo escuro */
+
 .dark-mode {
   background: linear-gradient(135deg, #1a1a1a, #262626, #0d0d0d);
 }
@@ -912,22 +912,11 @@ margin-bottom: 50px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .home-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh; /* ocupa a maior parte da tela */
+  min-height: 80vh; 
   text-align: center;
 }
 
@@ -950,7 +939,7 @@ margin-bottom: 50px;
 }
 
 
-/* ===== ANCORAS FLUTUANTES ===== */
+
 .social-floating {
   position: fixed;
   top: 50%;
@@ -981,7 +970,7 @@ margin-bottom: 50px;
   box-shadow: 0 0 12px #f8ecff, 0 0 24px #a383ff;
 }
 
-/* ===== ANCORAS FLUTUANTES (ícones + animações) ===== */
+
 .social-floating{
   position: fixed;
   top: 50%;
@@ -1016,7 +1005,7 @@ margin-bottom: 50px;
   line-height: 1;
 }
 
-/* atraso diferente por item para dar charme */
+
 .social-floating a:nth-child(1){ animation-delay: 0s; }
 .social-floating a:nth-child(2){ animation-delay: .1s; }
 .social-floating a:nth-child(3){ animation-delay: .2s; }
@@ -1027,7 +1016,7 @@ margin-bottom: 50px;
   50%{ transform: translateY(-4px); }
 }
 
-/* efeito de pulso ao passar o mouse */
+
 .social-floating a::after{
   content: "";
   position: absolute;
@@ -1046,41 +1035,41 @@ margin-bottom: 50px;
   100% { box-shadow: 0 0 0 18px rgba(163,131,255,0); }
 }
 
-/* hover com cores da marca */
+
 .social-floating a:hover{
   transform: translateY(-6px) scale(1.06) rotate(4deg);
   box-shadow: 0 10px 24px rgba(163,131,255,0.4);
   filter: saturate(1.1);
 }
 
-/* WhatsApp */
+
 .social-floating a.wa:hover{
   background: linear-gradient(135deg,#25D366,#128C7E);
 }
 
-/* GitHub */
+
 .social-floating a.gh:hover{
   background: #24292e;
 }
 
-/* LinkedIn */
+
 .social-floating a.li:hover{
   background: #0077B5;
 }
 
-/* Instagram (gradiente clássico) */
+
 .social-floating a.ig:hover{
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%,
               #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
-/* acessibilidade: foco no teclado */
+
 .social-floating a:focus{
   outline: 3px solid #a383ff;
   outline-offset: 2px;
 }
 
-/* mobile: vira barra inferior central */
+
 @media (max-width: 600px){
   .social-floating{
     top: auto;
@@ -1093,7 +1082,7 @@ margin-bottom: 50px;
 }
 .social-floating a i{ font-size: 1.45rem; line-height: 1; }
 
-/* Título do herói (home) */
+
 .hero-content{
   display:flex;
   flex-direction:column;
@@ -1107,28 +1096,28 @@ margin-bottom: 50px;
   font-weight:700;
   color:#e8dbff;
   text-shadow:0 0 6px rgba(195,160,255,.6), 0 0 12px rgba(150,100,255,.4);
-  animation:glow 3s ease-in-out infinite alternate; /* usa seu @keyframes glow */
-  margin:0;               /* evita saltos */
+  animation:glow 3s ease-in-out infinite alternate; 
+  margin:0;               
   line-height:1.15;
 }
 
-/* ajuste responsivo extra */
+
 @media (max-width: 768px){
   .hero-title{ font-size:clamp(24px, 5vw + 6px, 36px); }
 }
 
-/* dark mode: mantém contraste */
+
 .dark-mode .hero-title{
   color:#eae3ff;
   text-shadow:0 0 8px rgba(164,142,255,.55), 0 0 14px rgba(120,80,200,.35);
 }
-/* === Título do herói: estilo + posição acima da foto === */
+
 .photo-container{
   display:flex;
   flex-direction:column;
   align-items:center;
-  gap:12px;                 /* espaço pequeno entre o título e a foto */
-  margin-top:-12px;         /* puxa levemente tudo pra cima */
+  gap:12px;                 
+  margin-top:-12px;         
 }
 
 .hero-title{
@@ -1139,19 +1128,19 @@ margin-bottom: 50px;
   letter-spacing:.5px;
   font-size:clamp(26px, 3.6vw, 46px);
 
-  /* cor + brilho */
+  
   color:#e8dbff;
   text-shadow:
     0 0 6px rgba(195,160,255,.55),
     0 0 14px rgba(150,100,255,.35);
 
-  /* efeito de leve entrada */
+  
   opacity:0;
   transform: translateY(-6px);
   animation: heroFade .8s ease forwards;
 }
 
-/* opcional: destaque sutil na primeira palavra */
+
 .hero-title::first-letter{
   filter: drop-shadow(0 0 6px rgba(163,131,255,.6));
 }
@@ -1160,22 +1149,22 @@ margin-bottom: 50px;
   to{ opacity:1; transform: translateY(0); }
 }
 
-/* Deixa ainda "mais pra cima" em telas grandes */
+
 @media (min-width: 1025px){
   .container{ padding-top: 24px; }
   .photo-container{ margin-top:-18px; }
 }
 
-/* Ajustes mobile */
+
 @media (max-width: 768px){
   .hero-title{
     font-size:clamp(22px, 6vw, 34px);
-    text-wrap:balance;      /* quebra bonita em 2 linhas se precisar */
+    text-wrap:balance;      
   }
   .photo-container{ gap:10px; margin-top:-8px; }
 }
 
-/* Dark mode: contraste do título */
+
 .dark-mode .hero-title{
   color:#eae3ff;
   text-shadow:
