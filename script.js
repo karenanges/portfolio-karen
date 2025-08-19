@@ -189,3 +189,60 @@ function animate() {
 }
 
 animate();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+
+
+slides.forEach(slide => {
+  const clone = slide.cloneNode(true);
+  track.appendChild(clone);
+});
+
+let speed = 2.0; 
+let position = 0;
+let animationId; 
+
+function moveCarousel() {
+  position -= speed;
+
+  if (position <= -track.scrollWidth / 2) {
+    position = 0;
+  }
+
+  track.style.transform = `translateX(${position}px)`;
+  animationId = requestAnimationFrame(moveCarousel); 
+}
+
+
+track.parentElement.addEventListener('mouseenter', () => {
+  cancelAnimationFrame(animationId);
+});
+
+
+track.parentElement.addEventListener('mouseleave', () => {
+  moveCarousel();
+});
+
+
+moveCarousel();
