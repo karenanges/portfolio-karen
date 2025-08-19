@@ -1331,3 +1331,25 @@ margin-bottom: 50px;
 }
 
 
+
+.footer {
+  background: #d9c9ff; 
+  color: #333; 
+  text-align: center;
+  padding: 15px 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  position: relative;
+  z-index: 10;
+}
+
+
+.dark-mode .footer{ 
+
+  color:black;
+  background: #a383ff;
+  text-shadow:
+    0 0 8px rgba(164,142,255,.55),
+    0 0 16px rgba(120,80,200,.35);
+}
+
