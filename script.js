@@ -141,57 +141,54 @@ darkModeBtn.addEventListener("click", () => {
 //mouse estrelinahs
 
 
-const total = 5;
-const stars = [];
-let mouseX = window.innerWidth / 2;
-let mouseY = window.innerHeight / 2;
+// Mouse estrelinhas - só em telas grandes
+if (window.innerWidth > 768) { // 768px é um breakpoint comum para tablets
+  const total = 5;
+  const stars = [];
+  let mouseX = window.innerWidth / 2;
+  let mouseY = window.innerHeight / 2;
 
+  for (let i = 0; i < total; i++) {
+    const star = document.createElement('img');
+    star.src = 'estrela.png';
+    star.style.position = 'fixed'; 
+    star.style.width = `${15 + Math.random() * 15}px`;
+    star.style.height = star.style.width;
+    star.style.pointerEvents = 'none';
+    star.style.opacity = `${0.5 + Math.random() * 0.5}`;
+    star.style.zIndex = '9999';
+    star.style.left = `${window.innerWidth/2}px`;
+    star.style.top = `${window.innerHeight/2}px`;
+    document.body.appendChild(star);
+    stars.push({el: star, x: window.innerWidth/2, y: window.innerHeight/2});
+  }
 
-for (let i = 0; i < total; i++) {
-  const star = document.createElement('img');
-  star.src = 'estrela.png';
-  star.style.position = 'fixed'; 
-  star.style.width = `${15 + Math.random() * 15}px`;
-  star.style.height = star.style.width;
-  star.style.pointerEvents = 'none';
-  star.style.opacity = `${0.5 + Math.random() * 0.5}`;
-  star.style.zIndex = '9999';
-  star.style.left = `${window.innerWidth/2}px`;
-  star.style.top = `${window.innerHeight/2}px`;
-  document.body.appendChild(star);
-  stars.push({el: star, x: window.innerWidth/2, y: window.innerHeight/2});
-}
-
-
-document.addEventListener('mousemove', e => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-});
-
-
-function animate() {
-  let prevX = mouseX;
-  let prevY = mouseY;
-
-  stars.forEach((starObj, i) => {
-    const speed = 0.15 - i*0.008;
-    starObj.x += (prevX - starObj.x) * speed;
-    starObj.y += (prevY - starObj.y) * speed;
-
-    starObj.el.style.left = `${starObj.x - parseFloat(starObj.el.style.width)/2}px`;
-    starObj.el.style.top = `${starObj.y - parseFloat(starObj.el.style.height)/2}px`;
-
-    prevX = starObj.x;
-    prevY = starObj.y;
+  document.addEventListener('mousemove', e => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
   });
 
-  requestAnimationFrame(animate);
+  function animate() {
+    let prevX = mouseX;
+    let prevY = mouseY;
+
+    stars.forEach((starObj, i) => {
+      const speed = 0.15 - i*0.008;
+      starObj.x += (prevX - starObj.x) * speed;
+      starObj.y += (prevY - starObj.y) * speed;
+
+      starObj.el.style.left = `${starObj.x - parseFloat(starObj.el.style.width)/2}px`;
+      starObj.el.style.top = `${starObj.y - parseFloat(starObj.el.style.height)/2}px`;
+
+      prevX = starObj.x;
+      prevY = starObj.y;
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
 }
-
-animate();
-
-
-
 
 
 
