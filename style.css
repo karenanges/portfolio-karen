@@ -1227,3 +1227,107 @@ margin-bottom: 50px;
   position: relative;
   top: -10px;              
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dark-mode .certificados h2 {
+
+  color:#eae3ff;
+  text-shadow:
+    0 0 8px rgba(164,142,255,.55),
+    0 0 16px rgba(120,80,200,.35);
+
+}
+.dark-mode #certificados::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 3px;
+  background: linear-gradient(135deg,#4c3a78, #a383ff, #4c3a78);
+  background-size: 200% 200%;
+  animation: borderFlow 6s ease infinite;
+  z-index: -1;
+
+}
+
+
+
+
+
+
+
+#certificados {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 40px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  z-index: 1;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#certificados::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 3px;
+  background: linear-gradient(135deg, #a383ff, #d9c9ff, #a383ff);
+  background-size: 200% 200%;
+  animation: borderFlow 6s ease infinite;
+  z-index: -1;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 30px;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 30px;
+  will-change: transform;
+}
+
+.carousel-slide {
+  min-width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  border: 3px solid #a383ff;
+  box-shadow: 0 4px 20px rgba(163,131,255,0.3);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.carousel-slide img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 15px;
+  display: block;
+}
+
+
