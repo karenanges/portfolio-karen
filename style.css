@@ -1366,3 +1366,39 @@ margin-bottom: 50px;
     0 0 16px rgba(120,80,200,.35);
 }
 
+
+
+
+
+@media (max-width: 600px) {
+  .social-floating a {
+    --size: 40px; 
+    width: var(--size);
+    height: var(--size);
+    padding: 0; 
+    display: grid;
+    place-items: center; 
+  }
+
+  .social-floating a i {
+    font-size: calc(var(--size) * 0.5); 
+    line-height: 1;
+    display: block; 
+  }
+}
+
+@media (max-width: 600px) {
+  .social-floating a {
+    background: rgba(255, 255, 255, 0.35); 
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+}
+
+
+
+
+
+
+
+
