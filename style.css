@@ -1370,6 +1370,18 @@ margin-bottom: 50px;
 
 
 
+
+@media (max-width: 600px){
+  .social-floating{
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+
 @media (max-width: 600px) {
   .social-floating a {
     --size: 40px; 
