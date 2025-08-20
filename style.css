@@ -1216,6 +1216,19 @@ margin-bottom: 50px;
   background: #ccc;
 }
 
+
+.dark-mode #toggleDarkMode {
+  background-color: #785dbb;
+  color: #7960b9;
+  box-shadow: 0 4px 12px rgba(164, 142, 255, 0.5);
+}
+
+
+
+
+
+
+
 .hero-content {
   display: flex;
   flex-direction: column;
